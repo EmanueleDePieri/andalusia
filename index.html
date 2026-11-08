@@ -1,128 +1,49 @@
 <!doctype html>
 <html lang="it">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Pianificazione del road trip in Andalusia per Pasqua 2027." />
-    <title>Andalusia 2027 — Road trip di Pasqua</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header class="hero" id="inizio">
-      <nav class="nav shell">
-        <a class="brand" href="#inizio" aria-label="Andalusia 2027, inizio">Andalusia <span>’27</span></a>
-        <button class="menu-button" aria-expanded="false" aria-controls="menu">Menu</button>
-        <div class="nav-links" id="menu">
-          <a href="#voli">Voli</a>
-          <a href="#itinerario">Itinerario</a>
-          <a href="#auto">Auto</a>
-          <a href="#pianifica">Da fare</a>
-        </div>
-      </nav>
-
-      <div class="hero-grid shell">
-        <div class="hero-copy">
-          <p class="eyebrow">Road trip · Pasqua 2027</p>
-          <h1>Otto giorni tra<br /><em>città, patios</em> e strade bianche.</h1>
-          <p class="intro">Da Venezia all’Andalusia: Málaga, Granada, Córdoba, Siviglia e Ronda, senza inutili ritorni sui propri passi.</p>
-          <div class="hero-actions">
-            <a class="button button-dark" href="#voli">Confronta i voli <span>↓</span></a>
-            <a class="text-link" href="#itinerario">Vedi il percorso</a>
-          </div>
-        </div>
-        <div class="hero-art" aria-label="Illustrazione astratta di una mappa del road trip">
-          <div class="sun"></div>
-          <div class="route route-one"></div><div class="route route-two"></div><div class="route route-three"></div>
-          <div class="city city-malaga"><span>Málaga</span></div>
-          <div class="city city-granada"><span>Granada</span></div>
-          <div class="city city-cordoba"><span>Córdoba</span></div>
-          <div class="city city-seville"><span>Siviglia</span></div>
-          <div class="city city-ronda"><span>Ronda</span></div>
-          <div class="arch arch-a"></div><div class="arch arch-b"></div>
-          <p class="art-note">Costa del Sol → Sierra Nevada → Guadalquivir</p>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Road trip in Andalusia: tappe, attrazioni, tempi e budget indicativi." />
+  <title>Andalusia — road trip in 8 notti</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>.hero-map{display:block;width:100%;height:100%;object-fit:contain;object-position:center;background:#ead7af}@media (min-width:801px){.day-grid{grid-template-columns:repeat(9,1fr)}}</style>
+</head>
+<body>
+  <header class="hero" id="inizio">
+    <nav class="nav shell">
+      <a class="logo" href="#inizio">A<span>.</span>27</a>
+      <button class="menu-toggle" aria-label="Apri il menu" aria-expanded="false">Menu</button>
+      <div class="nav-links" id="navLinks"><a href="#viaggio">Il viaggio</a><a href="#tappe">Le tappe</a><a href="#selezione">Da prenotare</a></div>
+    </nav>
+    <div class="hero-layout shell">
+      <div class="hero-copy">
+        <p class="kicker">Spagna del Sud · guida personale</p>
+        <h1>Andalusia,<br /><em>con calma.</em></h1>
+        <p>Otto notti tra fortezze moresche, vicoli d’ombra, palazzi nasridi e città affacciate sul Guadalquivir.</p>
+        <a class="button" href="#viaggio">Scopri l’itinerario <span>↓</span></a>
       </div>
-      <div class="hero-footer shell">
-        <span>21—29 MAR 2027</span><span>7 NOTTI</span><span>~ 940 KM MAX</span><span>Pasqua: 28 marzo</span>
+      <div class="hero-illustration" aria-label="Mappa illustrata del road trip in Andalusia">
+        <img class="hero-map" src="roadtrip.jfif" alt="Mappa illustrata dell'Andalusia con Málaga, Ronda, Setenil, Granada, Córdoba e Siviglia" />
+        <div class="hero-stamp">8<br /><small>notti</small></div>
       </div>
-    </header>
-
-    <main>
-      <section class="recommendation shell" aria-labelledby="consiglio-titolo">
-        <div class="recommendation-marker">01</div>
-        <div>
-          <p class="eyebrow">La scelta più efficiente</p>
-          <h2 id="consiglio-titolo">Arriva a Málaga.<br />Riparti da Siviglia.</h2>
-        </div>
-        <div class="recommendation-text">
-          <p>La configurazione open jaw elimina il rientro su Málaga e trasforma gli spostamenti in parte del viaggio.</p>
-          <p class="small-note">Le tariffe di fine marzo 2027 non sono ancora in vendita. I valori qui sotto sono riferimenti da ricontrollare appena apriranno i calendari estivi.</p>
-        </div>
-      </section>
-
-      <section class="flight-section" id="voli">
-        <div class="shell section-heading">
-          <div><p class="eyebrow">Come arrivare</p><h2>Quattro modi per<br />fare lo stesso viaggio.</h2></div>
-          <p>Confronto basato sui collegamenti diretti attualmente osservati da Venezia Marco Polo e Treviso.</p>
-        </div>
-        <div class="shell flight-grid" id="flightCards"></div>
-        <div class="shell flight-footnote"><span>*</span> Fasce indicative basate su tariffe minime pubblicate nel 2026, senza bagaglio né posto. Non sono quotazioni per Pasqua 2027.</div>
-      </section>
-
-      <section class="route-section" id="itinerario">
-        <div class="shell section-heading route-heading">
-          <div><p class="eyebrow">Il giro consigliato</p><h2>Ogni tappa al posto giusto.</h2></div>
-          <div class="route-total"><strong>~ 7h 30m</strong><span>di guida distribuita</span></div>
-        </div>
-        <div class="shell route-layout">
-          <ol class="timeline" id="timeline"></ol>
-          <aside class="route-aside">
-            <p class="eyebrow">Un piccolo margine fa la differenza</p>
-            <h3>Non guidare nei centri storici.</h3>
-            <p>Per Granada, Córdoba e Siviglia conviene prenotare un garage o un parcheggio esterno. Le zone a traffico limitato e le strade strette non valgono il rischio.</p>
-            <div class="mini-stat"><span>Da non saltare</span><strong>Alhambra</strong><small>Prenotazione appena disponibile</small></div>
-          </aside>
-        </div>
-      </section>
-
-      <section class="car-section" id="auto">
-        <div class="shell car-layout">
-          <div class="car-title"><p class="eyebrow">Noleggio auto</p><h2>Un’auto, due aeroporti.</h2><p>Prima scelta: ritiro AGP, consegna SVQ. Confronta sempre il totale finale, non solo la tariffa giornaliera.</p></div>
-          <div class="car-rules">
-            <div><span>01</span><p><strong>Prova AGP → SVQ aeroporto</strong>Le riconsegne aeroporto-aeroporto tendono a essere le più convenienti.</p></div>
-            <div><span>02</span><p><strong>Fissa una soglia</strong>Se il supplemento one-way supera €70–90, valuta il loop su Málaga.</p></div>
-            <div><span>03</span><p><strong>Leggi il totale</strong>Franchigia, carburante, secondo conducente e supplementi contano più del prezzo “da”.</p></div>
-          </div>
-        </div>
-        <div class="shell rental-table-wrap">
-          <table>
-            <thead><tr><th>Operatore</th><th>One-way nazionale</th><th>Presenza</th><th>Da verificare</th><th>Ordine</th></tr></thead>
-            <tbody id="rentalRows"></tbody>
-          </table>
-        </div>
-      </section>
-
-      <section class="planning shell" id="pianifica">
-        <div class="planning-title"><p class="eyebrow">Da fare</p><h2>Il momento giusto<br />per prenotare.</h2></div>
-        <div class="planning-list" id="planningList"></div>
-      </section>
-
-      <section class="sources shell">
-        <p class="eyebrow">Fonti consultate</p>
-        <div class="source-links">
-          <a href="https://www.rmg.co.uk/stories/time/when-easter" target="_blank" rel="noreferrer">Data Pasqua 2027 ↗</a>
-          <a href="https://www.flightconnections.com/flights-from-vce-to-svq" target="_blank" rel="noreferrer">Diretti Venezia—Siviglia ↗</a>
-          <a href="https://www.ryanair.com/gb/en/flights/flights-from-seville-to-venice-treviso" target="_blank" rel="noreferrer">Ryanair Siviglia—Venezia ↗</a>
-          <a href="https://www.ryanair.com/gb/en/flights/flights-from-malaga-to-venice-treviso" target="_blank" rel="noreferrer">Ryanair Málaga—Venezia ↗</a>
-          <a href="https://www.sixt.com/car-rental/spain/malaga/" target="_blank" rel="noreferrer">SIXT: one-way in Spagna ↗</a>
-          <a href="https://www.aena.es/en/malaga-costa-del-sol/airport-services/car-hire.html" target="_blank" rel="noreferrer">Operatori a Málaga AGP ↗</a>
-        </div>
-      </section>
-    </main>
-    <footer class="footer"><div class="shell"><span>Andalusia ’27</span><span>Piano iniziale · aggiornato settembre 2026</span></div></footer>
-    <script src="script.js"></script>
-  </body>
+    </div>
+    <div class="hero-strip"><div class="shell"><span>5 città</span><span>1 road trip</span><span>9 giorni / 8 notti</span><span>100% Andalusia</span></div></div>
+  </header>
+  <main>
+    <section class="intro shell" id="viaggio">
+      <div><p class="kicker">La sintesi</p><h2>Un ritmo che lascia<br />spazio alle città.</h2></div>
+      <p>Questo è un piano da 9 giorni di calendario e 8 notti. Include le due mezze giornate di volo, i trasferimenti, check-in, pasti e un margine ragionevole per parcheggi e ritardi. Málaga ha due notti, Granada due e Siviglia due.</p>
+    </section>
+    <section class="days-section"><div class="shell"><div class="section-top"><p class="kicker">Nove giorni, tappa per tappa</p><p>La prima e l’ultima giornata sono volutamente più leggere. I trasferimenti lunghi sono separati dalle visite più impegnative.</p></div><div class="day-grid" id="dayGrid"></div></div></section>
+    <section class="route shell"><div class="route-heading"><p class="kicker">L’ordine suggerito</p><h2>Da Málaga a Siviglia,<br />senza tornare indietro.</h2></div><div class="route-line" id="routeLine"></div><p class="route-note">Málaga → Ronda + Setenil → Granada → Córdoba → Siviglia. Medina Azahara e il Castello di Almodóvar restano due alternative per la giornata di Córdoba: meglio sceglierne una.</p></section>
+    <section class="destinations" id="tappe"><div class="shell destination-heading"><div><p class="kicker">Cosa vedere</p><h2>Le tappe nel tuo file,<br />ordinate per città.</h2></div><p>Scegli una destinazione per sfogliare attrazioni, tempo necessario, prezzo indicativo e nota storica.</p></div><div class="shell"><div class="tabs" id="tabs" role="tablist" aria-label="Destinazioni"></div><div id="destinationPanel"></div></div></section>
+    <section class="selection" id="selezione"><div class="shell selection-layout"><div><p class="kicker">Priorità prenotazioni</p><h2>Prima le esperienze<br />a numero chiuso.</h2></div><div class="booking-list"><div><span>01</span><p><strong>Alhambra</strong>La visita richiede una fascia oraria, soprattutto per i Palacios Nazaríes.</p></div><div><span>02</span><p><strong>Alcázar di Siviglia</strong>Meglio acquistare il biglietto online per non sacrificare tempo in coda.</p></div><div><span>03</span><p><strong>Hotel e auto</strong>Bloccare tariffe cancellabili; poi ottimizzare quando ci sono i voli.</p></div></div></div></section>
+    <section class="optional shell"><div class="optional-number">+</div><div><p class="kicker">Scelta per Córdoba</p><h2>Medina o Castello?</h2><p>Nel tempo disponibile conviene scegliere fra Medina Azahara e il Castello di Almodóvar del Río. Entrambi nello stesso giorno renderebbero troppo serrati visita, pasti e trasferimento verso Siviglia.</p></div><div class="optional-meta"><span>1</span><small>escursione</small><span>2 h</span><small>da dedicare</small></div></section>
+  </main>
+  <footer><div class="shell"><span>A.27 · Road trip in Andalusia</span><span>Dati da Andalusia.txt · prezzi e aperture da ricontrollare</span></div></footer>
+  <script src="script.js"></script>
+</body>
 </html>
